@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['POST'])
 def add_message():
     content = request.json
     print(content['id'])
